@@ -1,221 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Petsitter Wrocław — Andrzej i Marina</title>
-<style>
-  :root {
-    --bg: #EAE3D6;
-    --card: #FBF8F2;
-    --ink: #3E2E1B;
-    --brown: #6B4F2B;
-    --brown-soft: #8A6D47;
-    --line: #D9CDB7;
-    --whatsapp: #3E7A5C;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--bg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: var(--ink);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding: 48px 20px 60px;
-  }
-
-  .page {
-    width: 100%;
-    max-width: 420px;
-  }
-
-  .avatar {
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-    background: var(--brown);
-    margin: 0 auto 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .avatar svg { width: 42px; height: 42px; }
-
-  h1 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0 0 4px;
-    letter-spacing: -0.01em;
-  }
-
-  .subtitle {
-    text-align: center;
-    font-size: 14px;
-    color: var(--brown-soft);
-    margin: 0 0 6px;
-  }
-
-  .tagline {
-    text-align: center;
-    font-size: 13px;
-    color: var(--brown-soft);
-    margin: 0 0 36px;
-    line-height: 1.5;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  a.link {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 16px 18px;
-    text-decoration: none;
-    color: var(--ink);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-  }
-
-  a.link:active { transform: scale(0.98); }
-
-  a.link:hover {
-    border-color: var(--brown-soft);
-    box-shadow: 0 4px 14px rgba(107, 79, 43, 0.12);
-  }
-
-  .icon {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    border-radius: 12px;
-    background: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .icon svg { width: 20px; height: 20px; stroke: var(--brown); }
-
-  .link-text { flex: 1; }
-
-  .link-title {
-    font-size: 15px;
-    font-weight: 600;
-    margin: 0;
-  }
-
-  .link-sub {
-    font-size: 12px;
-    color: var(--brown-soft);
-    margin: 2px 0 0;
-  }
-
-  .chevron { stroke: var(--brown-soft); width: 16px; height: 16px; }
-
-  .featured {
-    border-color: var(--brown);
-    background: linear-gradient(0deg, var(--card), var(--card)), var(--card);
-    position: relative;
-  }
-
-  .footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 12px;
-    color: var(--brown-soft);
-  }
-
-  .footer a { color: var(--brown-soft); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Domowa opieka nad psem i kotem we Wrocławiu. 71+ rezerwacji, 45 opinii i ocena 5.0 na Petsy.">
+  <meta name="theme-color" content="#183f36">
+  <meta property="og:title" content="Petsitter Wrocław — Marina i Andrzej">
+  <meta property="og:description" content="Spokojna, domowa opieka i regularne fotorelacje. Sprawdź dostępność.">
+  <meta property="og:image" content="assets/hero-summer.jpg">
+  <title>Petsitter Wrocław — Marina i Andrzej</title>
+  <style>
+    :root{--ink:#183f36;--ink2:#335c52;--cream:#f7f1e7;--paper:#fffdf8;--orange:#dd7047;--orange2:#bd5430;--mint:#dcece4;--line:rgba(24,63,54,.14);--shadow:0 22px 60px rgba(24,63,54,.12);--radius:28px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(247,241,231,.88);border-bottom:1px solid rgba(24,63,54,.08)}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.02em}.brand-mark{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;color:var(--paper);background:var(--ink);font-size:19px}.brand small{display:block;color:var(--ink2);font-size:11px;font-weight:650;letter-spacing:.04em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:26px}.nav-links>a:not(.button){text-decoration:none;font-size:14px;font-weight:700}
+    .button{display:inline-flex;min-height:50px;align-items:center;justify-content:center;gap:9px;padding:0 22px;color:#fff;background:var(--orange);border:0;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 24px rgba(221,112,71,.25);transition:transform .18s ease,background .18s ease}.button:hover{background:var(--orange2);transform:translateY(-2px)}.button.secondary{color:var(--ink);background:transparent;border:1px solid var(--line);box-shadow:none}.button.secondary:hover{background:rgba(255,255,255,.55)}
+    .hero{padding:58px 0 76px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;color:var(--orange2);font-size:13px;font-weight:850;text-transform:uppercase;letter-spacing:.12em}.eyebrow:before{content:"";width:28px;height:2px;background:var(--orange)}h1,h2,h3,p{margin-top:0}h1{margin-bottom:22px;font-size:clamp(44px,6vw,74px);line-height:.98;letter-spacing:-.055em}h1 em{color:var(--orange);font-style:normal}.lead{max-width:650px;margin-bottom:30px;color:var(--ink2);font-size:clamp(17px,2vw,21px)}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.microcopy{margin-top:14px;color:var(--ink2);font-size:12px}
+    .hero-media{position:relative;min-height:600px}.hero-photo{width:88%;height:570px;margin-left:auto;border-radius:180px 180px 34px 34px;object-fit:cover;object-position:50% 44%;box-shadow:var(--shadow)}.rating-card{position:absolute;left:0;bottom:45px;width:236px;padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}.rating-card strong{display:block;font-size:28px;line-height:1}.stars{color:#e99a2f;letter-spacing:2px;margin:8px 0 5px}.rating-card span{color:var(--ink2);font-size:13px}.paw-orbit{position:absolute;right:-28px;top:40px;width:110px;height:110px;display:grid;place-items:center;border-radius:50%;background:var(--mint);font-size:42px;transform:rotate(12deg)}
+    .stats{margin-top:-24px;position:relative;z-index:2}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);color:#fff;border-radius:var(--radius);box-shadow:var(--shadow)}.stat{padding:26px 30px;border-right:1px solid rgba(255,255,255,.13)}.stat:last-child{border:0}.stat strong{display:block;font-size:clamp(26px,3vw,38px);line-height:1.1}.stat span{color:rgba(255,255,255,.72);font-size:13px}
+    section{padding:96px 0}.section-head{max-width:720px;margin-bottom:40px}h2{margin-bottom:16px;font-size:clamp(34px,4.5vw,54px);line-height:1.06;letter-spacing:-.045em}.section-head p{color:var(--ink2);font-size:18px}.services{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service-card{min-height:260px;display:flex;flex-direction:column;padding:26px;background:var(--cream);border:1px solid var(--line);border-radius:24px}.service-icon{font-size:30px}.service-card h3{margin:22px 0 8px;font-size:20px}.service-card p{color:var(--ink2);font-size:14px}.price{margin-top:auto;padding-top:18px;font-size:28px;font-weight:900;letter-spacing:-.03em}.price small{font-size:12px;color:var(--ink2);font-weight:650;letter-spacing:0}.price-note{margin:22px 0 0;color:var(--ink2);font-size:12px}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:68px;align-items:center}.photo-stack{position:relative;min-height:520px}.photo-main{width:75%;height:470px;object-fit:cover;border-radius:34px;box-shadow:var(--shadow)}.photo-small{position:absolute;right:0;bottom:0;width:48%;height:260px;object-fit:cover;border:10px solid var(--cream);border-radius:34px}.check-list{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}.check-list li{display:flex;gap:12px;align-items:flex-start}.check{flex:0 0 25px;height:25px;display:grid;place-items:center;border-radius:50%;background:var(--mint);font-weight:900}
+    .process{background:var(--mint)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:step}.step{position:relative;padding-top:70px}.step:before{counter-increment:step;content:"0" counter(step);position:absolute;top:0;left:0;color:var(--orange);font-size:45px;font-weight:900;letter-spacing:-.05em}.step h3{margin-bottom:8px;font-size:19px}.step p{color:var(--ink2);font-size:14px}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{padding:28px;background:var(--paper);border:1px solid var(--line);border-radius:24px}.review .stars{font-size:14px}.review blockquote{margin:18px 0 24px;font-size:17px;line-height:1.55}.review footer{color:var(--ink2);font-size:13px}.faq{background:var(--paper)}.faq-grid{max-width:850px}details{border-top:1px solid var(--line)}details:last-child{border-bottom:1px solid var(--line)}summary{cursor:pointer;list-style:none;padding:22px 46px 22px 0;font-weight:800;position:relative}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:8px;top:17px;font-size:28px;color:var(--orange)}details[open] summary:after{content:"−"}details p{max-width:720px;padding:0 0 22px;color:var(--ink2)}
+    .special-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.special-card{display:grid;grid-template-columns:1fr auto;gap:28px;min-height:330px;padding:36px;border:1px solid var(--line);border-radius:30px;background:var(--mint)}.special-card.dark{color:#fff;background:var(--ink)}.special-card h3{margin:12px 0;font-size:30px;line-height:1.05;letter-spacing:-.035em}.special-card p{max-width:510px;color:var(--ink2)}.special-card.dark p{color:rgba(255,255,255,.72)}.special-card ul{margin:22px 0 0;padding-left:20px}.special-card li{margin:8px 0}.special-price{text-align:right;white-space:nowrap;font-size:30px;font-weight:900}.special-price small{display:block;font-size:12px;font-weight:650;opacity:.7}.badge{display:inline-flex;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.58);font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}.dark .badge{background:rgba(255,255,255,.12)}.gallery{padding-top:0}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:240px 240px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:24px}.gallery-grid img:first-child{grid-row:1/3}.gallery-grid img:last-child{grid-column:2/4;object-position:center 34%}.cta{padding:100px 0}.cta-card{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center;padding:clamp(34px,6vw,70px);color:#fff;background:var(--ink);border-radius:38px;overflow:hidden;position:relative}.cta-card:after{content:"🐾";position:absolute;right:-30px;bottom:-70px;font-size:180px;opacity:.07;transform:rotate(-18deg)}.cta-card h2{max-width:700px;margin:0}.cta-actions{display:grid;gap:12px;position:relative;z-index:1}.cta-actions .secondary{color:#fff;border-color:rgba(255,255,255,.28)}.site-footer{padding:34px 0 100px;color:var(--ink2);font-size:13px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid var(--line);padding-top:28px}.footer-links{display:flex;gap:20px}.mobile-bar{display:none}
+    @media(max-width:900px){.nav-links>a:not(.button){display:none}.hero-grid,.about-grid,.cta-card,.special-grid{grid-template-columns:1fr}.hero{padding-top:42px}.hero-media{min-height:540px}.hero-photo{width:92%;height:510px}.service-grid,.steps{grid-template-columns:repeat(2,1fr)}.reviews-grid{grid-template-columns:1fr}}
+    @media(max-width:620px){.wrap{width:min(100% - 28px,1160px)}.topbar .button{display:none}.nav{min-height:66px}h1{font-size:47px}.hero{padding:34px 0 58px}.hero-grid{gap:38px}.hero-media{min-height:440px}.hero-photo{width:93%;height:420px;border-radius:110px 110px 25px 25px}.rating-card{width:205px;bottom:10px;padding:16px}.paw-orbit{width:74px;height:74px;right:-12px;font-size:29px}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat{padding:20px;border-bottom:1px solid rgba(255,255,255,.13)}.stat:nth-child(2){border-right:0}section{padding:72px 0}.service-grid,.steps{grid-template-columns:1fr}.service-card{min-height:225px}.special-card{grid-template-columns:1fr;padding:28px}.special-price{text-align:left}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px}.gallery-grid img:first-child{grid-column:1/3;grid-row:auto}.gallery-grid img:last-child{grid-column:1/3}.photo-stack{min-height:440px}.photo-main{width:82%;height:400px}.photo-small{width:52%;height:215px}.footer-row{align-items:flex-start;flex-direction:column}.mobile-bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;z-index:30;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,248,.94);border-top:1px solid var(--line);backdrop-filter:blur(14px)}.mobile-bar .button{min-height:46px;padding:0 10px;font-size:13px}}
+  </style>
 </head>
 <body>
-  <div class="page">
-    <div class="avatar">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#EAE3D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="4" r="2"/>
-        <circle cx="18" cy="8" r="2"/>
-        <circle cx="4" cy="8" r="2"/>
-        <circle cx="8" cy="14" r="2"/>
-        <path d="M11 20c-3 0-5-2-5-4.5S8.5 12 11 12s5 1 5 3.5S14 20 11 20Z"/>
-      </svg>
-    </div>
-
-    <h1>Petsitter Wrocław</h1>
-    <p class="subtitle">Andrzej i Marina</p>
-    <p class="tagline">Zaopiekujemy się Twoim pupilem jak swoim.<br>Spacery • Wizyty domowe • Opieka z zamieszkaniem</p>
-
-    <div class="links">
-
-      <a class="link featured" href="https://petsy.pl/p/marina-andrzej?r=m69c806z1m&code=DEFAULT-PL" target="_blank" rel="noopener">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
-        </div>
-        <div class="link-text">
-          <p class="link-title">Zarezerwuj przez Petsy</p>
-          <p class="link-sub">Rezerwacja i płatność online</p>
-        </div>
-        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-
-      <a class="link" href="#" id="cennik-link" target="_blank" rel="noopener">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 11 3.83A2 2 0 0 0 9.59 3.24L4 3a1 1 0 0 0-1 1l.24 5.59a2 2 0 0 0 .59 1.41l9.58 9.59a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.83Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
-        </div>
-        <div class="link-text">
-          <p class="link-title">Zobacz cennik</p>
-          <p class="link-sub">Aktualne ceny usług</p>
-        </div>
-        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-
-      <a class="link" id="whatsapp-link" href="#" target="_blank" rel="noopener">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
-        </div>
-        <div class="link-text">
-          <p class="link-title">Napisz na WhatsApp</p>
-          <p class="link-sub">Szybka odpowiedź</p>
-        </div>
-        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-
-      <a class="link" href="https://ig.me/m/petsitter.wro" target="_blank" rel="noopener">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-        </div>
-        <div class="link-text">
-          <p class="link-title">Napisz na Instagram</p>
-          <p class="link-sub">Otworzy się wiadomość</p>
-        </div>
-        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-
-    </div>
-
-    <p class="footer">Wrocław 📍 <a href="https://www.instagram.com/petsitter.wro/" target="_blank" rel="noopener">@petsitter.wro</a></p>
-  </div>
-
-  <script>
-    // --- EDIT THESE TWO VALUES ---
-    const WHATSAPP_NUMBER = "48799873618"; // e.g. 48600123456, no + or spaces
-    const CENNIK_IMAGE_URL = "cennik_post.png"; // link to hosted price list image, or replace with a Petsy/other URL
-    // ------------------------------
-
-    const waText = encodeURIComponent("Cześć! Chciałabym/chciałbym zapytać o opiekę nad psem 🐾");
-    document.getElementById('whatsapp-link').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
-    document.getElementById('cennik-link').href = CENNIK_IMAGE_URL;
-  </script>
+  <header class="topbar"><div class="wrap nav"><a class="brand" href="#top" aria-label="Strona główna"><span class="brand-mark">🐾</span><span>Petsitter Wrocław<small>Marina &amp; Andrzej</small></span></a><nav class="nav-links" aria-label="Główna nawigacja"><a href="#uslugi">Usługi</a><a href="#pakiety">Pakiety</a><a href="#o-nas">O nas</a><a href="#opinie">Opinie</a><a class="button" href="https://petsy.pl/p/marina-andrzej?r=m69c806z1m&amp;code=DEFAULT-PL" target="_blank" rel="noopener">Sprawdź dostępność →</a></nav></div></header>
+  <main id="top">
+    <section class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">Domowa opieka we Wrocławiu</span><h1>Spokój dla Ciebie.<br><em>Dobry czas dla pupila.</em></h1><p class="lead">Opiekujemy się psami i kotami tak, jak sami chcielibyśmy zostawić własnego pupila — uważnie, spokojnie i z regularnymi fotorelacjami.</p><div class="hero-actions"><a class="button" href="https://petsy.pl/p/marina-andrzej?r=m69c806z1m&amp;code=DEFAULT-PL" target="_blank" rel="noopener">Sprawdź termin na Petsy</a><a class="button secondary js-whatsapp" href="#">Napisz na WhatsApp</a></div><p class="microcopy">Szybka odpowiedź • Wrocław, okolice Kolejowej • PL / EN / RU</p></div><div class="hero-media"><img class="hero-photo" src="assets/hero-summer.jpg" alt="Marina z dwoma psami podczas spaceru we Wrocławiu" width="1350" height="1800"><div class="rating-card"><strong>5.0 / 5</strong><div class="stars">★★★★★</div><span>na podstawie 45 opinii</span></div><div class="paw-orbit">🐕</div></div></div></section>
+    <div class="stats"><div class="wrap stats-grid"><div class="stat"><strong>71+</strong><span>zrealizowanych rezerwacji</span></div><div class="stat"><strong>45</strong><span>opinii klientów</span></div><div class="stat"><strong>5.0</strong><span>średnia ocena</span></div><div class="stat"><strong>7</strong><span>stałych klientów</span></div></div></div>
+    <section class="services" id="uslugi"><div class="wrap"><div class="section-head"><span class="eyebrow">Usługi</span><h2>Opieka dopasowana do rytmu Twojego zwierzaka</h2><p>Dokładna cena zależy od terminu, rodzaju opieki i potrzeb pupila. Aktualną wycenę zobaczysz po podaniu danych na Petsy.</p></div><div class="service-grid">
+      <article class="service-card"><span class="service-icon">🏡</span><h3>Nocleg</h3><p>Domowa opieka, spacery, karmienie i fotorelacje podczas pobytu.</p><div class="price">149 zł <small>/ dzień roboczy</small><br>169 zł <small>/ weekend</small></div></article>
+      <article class="service-card"><span class="service-icon">☀️</span><h3>Opieka dzienna</h3><p>Bezpieczny dzień w mieszkaniu zamiast samotnego czekania w domu.</p><div class="price">od 100 zł <small>/ dzień</small></div></article>
+      <article class="service-card"><span class="service-icon">🔑</span><h3>Wizyta domowa</h3><p>Karmienie, zabawa, kuweta lub krótki spacer w znanym otoczeniu.</p><div class="price">od 50 zł <small>/ wizyta</small></div></article>
+      <article class="service-card"><span class="service-icon">🌿</span><h3>Spacer</h3><p>Spokojny lub aktywny spacer dostosowany do wieku i temperamentu.</p><div class="price">od 35 zł <small>/ spacer</small></div></article></div><p class="price-note">Weekend: piątek–niedziela oraz święta. Cena końcowa może zależeć od terminu i szczególnych potrzeb pupila.</p></div></section>
+    <section id="pakiety"><div class="wrap"><div class="section-head"><span class="eyebrow">Więcej spokoju</span><h2>Opcje dla psów, które potrzebują więcej</h2><p>Limitowane usługi dla właścicieli, którym zależy na wyłączności albo regularnej opiece.</p></div><div class="special-grid"><article class="special-card dark"><div><span class="badge">Premium</span><h3>Tylko jeden pies w domu</h3><p>Rezerwujemy cały pobyt wyłącznie dla Twojego psa. W tym czasie nie przyjmujemy innych zwierzęcych gości.</p><p>To dobre rozwiązanie dla psów lękliwych, starszych lub po prostu potrzebujących większego spokoju i indywidualnej uwagi.</p><ul><li>opieka bez innych zwierząt</li><li>indywidualnie ustalona rutyna dnia</li><li>rozszerzone fotorelacje i regularny kontakt</li><li>wcześniejsze spotkanie zapoznawcze</li><li>większa elastyczność podczas spacerów i odpoczynku</li></ul></div><div class="special-price">219 zł<small>pon.–czw.</small><br>249 zł<small>pt.–niedz. / święta</small></div></article><article class="special-card"><div><span class="badge">Pierwsze 20 miejsc</span><h3>Klub Stałego Gościa</h3><p>Miesięczny pakiet dla klientów, którzy korzystają z opieki regularnie i chcą łatwiej planować kolejne terminy.</p><ul><li>pierwszeństwo zapytań o terminy*</li><li>1 spacer 30 min w miesiącu</li><li>5% rabatu na opiekę od poniedziałku do czwartku</li><li>zapisany profil rutyny, karmienia i leków</li><li>1 bezpłatna zmiana terminu do 48 h</li></ul></div><div class="special-price">99 zł<small>/ miesiąc</small></div></article></div><p class="price-note">*Pierwszeństwo nie oznacza gwarancji dostępności. Szczegółowe warunki i sposób rezerwacji potwierdzamy indywidualnie przed uruchomieniem pakietu. Opieka nad szczeniakiem, podawanie leków albo potrzeba stałej obecności mogą wymagać indywidualnej wyceny.</p></div></section>
+    <section id="o-nas"><div class="wrap about-grid"><div class="photo-stack"><img class="photo-main" src="assets/team-dogs.jpg" alt="Marina i Andrzej z psami" loading="lazy"><img class="photo-small" src="assets/golden-home.jpg" alt="Marina z golden retrieverem w domu" loading="lazy"></div><div><span class="eyebrow">Marina i Andrzej</span><h2>Domowa opieka, nie anonimowy hotel</h2><p class="lead">Pracujemy zdalnie, dlatego możemy być blisko pupila przez większość dnia. Obserwujemy jego samopoczucie, dopasowujemy aktywność i pozostajemy w kontakcie z właścicielem.</p><ul class="check-list"><li><span class="check">✓</span><span>Regularne zdjęcia i informacje o samopoczuciu pupila.</span></li><li><span class="check">✓</span><span>Indywidualne podejście do diety, spacerów, leków i przyzwyczajeń.</span></li><li><span class="check">✓</span><span>Jasne, spokojne mieszkanie oraz duży park naprzeciwko budynku.</span></li><li><span class="check">✓</span><span>Doświadczenie z psami i kotami w różnym wieku, rozmiarze i temperamencie.</span></li></ul></div></div></section>
+    <section class="gallery" aria-label="Galeria naszych podopiecznych"><div class="wrap gallery-grid"><img src="assets/hero.jpg" alt="Marina z psem podczas spokojnego spaceru we Wrocławiu" loading="lazy"><img src="assets/dachshund-home.jpg" alt="Jamnik odpoczywający w mieszkaniu" loading="lazy"><img src="assets/walk-park.jpg" alt="Psy podczas spaceru w parku" loading="lazy"><img src="assets/dog-2.jpeg" alt="Marina i Andrzej z kotem" loading="lazy"></div></section>
+    <section class="process"><div class="wrap"><div class="section-head"><span class="eyebrow">Jak to działa</span><h2>Bez niespodzianek — od pierwszej wiadomości do powrotu</h2></div><div class="steps"><article class="step"><h3>Opowiedz o pupilu</h3><p>Termin, wiek, charakter, dieta, spacery, leki i relacje z innymi zwierzętami.</p></article><article class="step"><h3>Potwierdzamy dopasowanie</h3><p>Sprawdzamy dostępność i ustalamy, czy nasze warunki odpowiadają potrzebom pupila.</p></article><article class="step"><h3>Spokojny pobyt</h3><p>Trzymamy się ustalonej rutyny i wysyłamy regularne wiadomości oraz zdjęcia.</p></article><article class="step"><h3>Powrót do domu</h3><p>Przekazujemy informacje o pobycie, apetycie, spacerach i samopoczuciu.</p></article></div></div></section>
+    <section id="opinie"><div class="wrap"><div class="section-head"><span class="eyebrow">Opinie</span><h2>Najważniejsze: spokojny pupil i spokojny właściciel</h2></div><div class="reviews-grid"><article class="review"><div class="stars">★★★★★</div><blockquote>„Super komunikacja, doskonała ręka do zwierząt. Pies zadowolony i ja również.”</blockquote><footer>Agata i Boguś • opieka dzienna</footer></article><article class="review"><div class="stars">★★★★★</div><blockquote>„Fajni ludzie posiadający rękę do zwierząt. Mój psiak zadowolony. Na pewno jeszcze skorzystam.”</blockquote><footer>Maciej i Yuki • nocleg</footer></article><article class="review"><div class="stars">★★★★★</div><blockquote>„Everything super, flexible, good communication in English and Polish. Took great care of our dog.”</blockquote><footer>Tamas i Mochi • nocleg</footer></article></div><div style="margin-top:26px"><a class="button secondary" href="https://petsy.pl/p/marina-andrzej" target="_blank" rel="noopener">Zobacz wszystkie 45 opinii →</a></div></div></section>
+    <section class="faq"><div class="wrap"><div class="section-head"><span class="eyebrow">FAQ</span><h2>Przed pierwszą rezerwacją</h2></div><div class="faq-grid"><details><summary>Czy przyjmujecie szczeniaki i psich seniorów?</summary><p>Tak. Przed potwierdzeniem omawiamy rytm dnia, częstotliwość spacerów, leki oraz wszystkie szczególne potrzeby.</p></details><details><summary>Czy możecie podawać leki?</summary><p>Tak, po otrzymaniu jasnej instrukcji od właściciela. Opisz nazwę leku, dawkowanie i sposób podania.</p></details><details><summary>Jak często wysyłacie zdjęcia?</summary><p>Regularnie podczas pobytu. Częstotliwość możemy dopasować — wiemy, że dla wielu właścicieli kontakt jest bardzo ważny.</p></details><details><summary>Czy w domu są inne zwierzęta?</summary><p>Nie mamy własnych zwierząt. Każdą rezerwację oceniamy indywidualnie, również pod kątem ewentualnego kontaktu z innymi gośćmi.</p></details><details><summary>Co przygotować na pobyt?</summary><p>Karmę z instrukcją, smycz i szelki, leki, książeczkę zdrowia oraz ulubione posłanie lub zabawkę.</p></details></div></div></section>
+    <section class="cta"><div class="wrap cta-card"><div><span class="eyebrow" style="color:#f3b394">Wrocław</span><h2>Sprawdźmy, czy termin i warunki będą odpowiednie dla Twojego pupila</h2></div><div class="cta-actions"><a class="button" href="https://petsy.pl/p/marina-andrzej?r=m69c806z1m&amp;code=DEFAULT-PL" target="_blank" rel="noopener">Sprawdź dostępność</a><a class="button secondary js-whatsapp" href="#">Zapytaj na WhatsApp</a><a class="button secondary" href="https://www.instagram.com/petsitter.wro/" target="_blank" rel="noopener">Instagram @petsitter.wro</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© <span id="year"></span> Marina &amp; Andrzej • Petsitter Wrocław</span><div class="footer-links"><a href="https://petsy.pl/p/marina-andrzej" target="_blank" rel="noopener">Petsy</a><a href="https://www.instagram.com/petsitter.wro/" target="_blank" rel="noopener">Instagram</a><a class="js-whatsapp" href="#">WhatsApp</a></div></div></footer>
+  <div class="mobile-bar"><a class="button secondary js-whatsapp" href="#">WhatsApp</a><a class="button" href="https://petsy.pl/p/marina-andrzej?r=m69c806z1m&amp;code=DEFAULT-PL" target="_blank" rel="noopener">Sprawdź termin</a></div>
+  <script>const whatsappNumber="48799873618";const whatsappText=encodeURIComponent("Cześć! Chciałabym/chciałbym zapytać o opiekę nad pupilem. Termin: ... / Rodzaj opieki: ... / Pies lub kot: ...");document.querySelectorAll(".js-whatsapp").forEach(link=>{link.href=`https://wa.me/${whatsappNumber}?text=${whatsappText}`;link.target="_blank";link.rel="noopener"});document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
